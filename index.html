@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Show by Paritosh Barman</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #main>div {
+      /* width: 10%; */
+      max-width: 800px;
+      margin: auto;
+
+    }
+
+    #main>div>img {
+      width: 100%;
+    }
+
+    #nxtprv {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #nxt,
+    #prev,
+    #startpause {
+      font-size: 50px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    #nxt:hover,
+    #prev:hover,
+    #startpause:hover {
+      background-color: gray;
+    }
+
+    #nxt:active,
+    #prev:active,
+    #startpause:active {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <div>
+      <img id="imgAdd"
+        src="https://images.unsplash.com/photo-1622267224551-8063a2d4fbb4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZnJ1aXR8fHx8fHwxNzAxNTM3OTE3&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=500"
+        alt="">
+      <div id="nxtprv">
+        <div><button id="prev">❮</button></div>
+        <div><button id="startpause">▶</button></div>
+        <div><button id="nxt">❯</button></div>
+      </div>
+    </div>
+
+    <!-- <a href="https://source.unsplash.com/random/500x300?fruit">Click</a> -->
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
